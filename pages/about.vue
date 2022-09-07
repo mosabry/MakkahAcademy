@@ -67,7 +67,7 @@
               <v-col>
                 <v-row>
                   <div class="pdf-container">
-                    <iframe src="https://drive.google.com/file/d/1qVddrVTvUf0TIrDnfvu0YgOWrHg6zwuY/preview"
+                    <iframe src="https://drive.google.com/file/d/1dshT2Jq8yoqIs2W_FB4muuDYGbIRKlu2/preview"
                       class="responsive-iframe" allow="autoplay"></iframe>
                   </div>
                 </v-row>
@@ -94,7 +94,7 @@
               <v-col>
                 <v-row>
                   <div class="pdf-container">
-                    <iframe src="https://drive.google.com/file/d/1qVddrVTvUf0TIrDnfvu0YgOWrHg6zwuY/preview"
+                    <iframe src="https://drive.google.com/file/d/1LViMO4XW1NNuvmJeexce_AmrMIXG6aGi/preview"
                       class="responsive-iframe" allow="autoplay"></iframe>
                   </div>
                 </v-row>
@@ -121,7 +121,7 @@
               <v-col>
                 <v-row>
                   <div class="pdf-container">
-                    <iframe src="https://drive.google.com/file/d/1qVddrVTvUf0TIrDnfvu0YgOWrHg6zwuY/preview"
+                    <iframe src="https://drive.google.com/file/d/18-g9BbO4i4J5dV7-7FOoyMK-7aCNHQ21/preview"
                       class="responsive-iframe" allow="autoplay"></iframe>
                   </div>
                 </v-row>
