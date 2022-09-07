@@ -1,23 +1,9 @@
 <template>
   <v-app class="app">
-    <v-navigation-drawer
-      class="teal darken-1"
-      v-model="drawer"
-      :mini-variant="miniVariant"
-      :clipped="clipped"
-      fixed
-      app
-      dark
-      temporary
-    >
+    <v-navigation-drawer class="teal darken-1" v-model="drawer" :mini-variant="miniVariant" :clipped="clipped" fixed app
+      dark temporary>
       <v-list>
-        <v-list-item
-          v-for="(item, i) in items"
-          :key="i"
-          :to="item.to"
-          router
-          exact
-        >
+        <v-list-item v-for="(item, i) in items" :key="i" :to="item.to" router exact>
           <v-list-item-action>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-action>
@@ -28,28 +14,22 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar
-      class="navbar teal darken-1"
-      :clipped-left="clipped"
-      fixed
-      app
-      dark
-    >
+    <v-app-bar class="navbar teal darken-1" :clipped-left="clipped" fixed app dark>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
 
       <!-- <img id="logo" src="~/static/v.png" alt="logo" /> -->
 
-      <NuxtLink id="logo-text" to="/"
-        ><v-toolbar-title class="navbar-title" v-text="title" />
+      <NuxtLink id="logo-text" to="/">
+        <v-toolbar-title class="navbar-title" v-text="title" />
       </NuxtLink>
       <span class="white--text">&nbsp; - لتعليم القرآن الكريم</span>
       <v-spacer />
     </v-app-bar>
 
     <v-main>
-      <!-- <v-container> -->
-      <Nuxt />
-      <!-- </v-container> -->
+      <v-container>
+        <Nuxt />
+      </v-container>
     </v-main>
 
     <v-footer :absolute="!fixed" app class="teal darken-1">
@@ -109,6 +89,6 @@ export default {
 
 .v-parallax__image {
   filter: blur(2px);
-  background-size: cover;
+  // background-size: cover;
 }
 </style>

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import HeroVue from '../components/Hero.vue'
+import HeroVue from '@/components/Hero.vue'
 
 export default {
   name: 'IndexPage',
