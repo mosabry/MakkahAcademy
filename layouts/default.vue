@@ -63,7 +63,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'نــور مبين',
+      title: 'اكاديمية مكة',
     }
   },
 }
