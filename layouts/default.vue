@@ -17,7 +17,7 @@
     <v-app-bar class="navbar teal darken-1" :clipped-left="clipped" fixed app dark>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
 
-      <img id="logo" src="~/static/makkah.png" alt="logo" />
+      <!-- <img id="logo" src="~/static/makkah.png" alt="logo" /> -->
       &nbsp;
       <NuxtLink id="logo-text" to="/">
         <v-toolbar-title class="navbar-title" v-text="title" />
