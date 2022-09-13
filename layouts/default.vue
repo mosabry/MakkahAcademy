@@ -27,9 +27,9 @@
     </v-app-bar>
 
     <v-main>
-      <v-container>
+      <!-- <v-container> -->
         <Nuxt />
-      </v-container>
+      <!-- </v-container> -->
     </v-main>
 
     <v-footer :absolute="!fixed" app class="teal darken-1">
