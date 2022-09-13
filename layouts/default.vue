@@ -17,12 +17,12 @@
     <v-app-bar class="navbar teal darken-1" :clipped-left="clipped" fixed app dark>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
 
-      <!-- <img id="logo" src="~/static/v.png" alt="logo" /> -->
-
+      <img id="logo" src="~/static/makkah.png" alt="logo" />
+      &nbsp;
       <NuxtLink id="logo-text" to="/">
         <v-toolbar-title class="navbar-title" v-text="title" />
       </NuxtLink>
-      <span class="white--text">&nbsp; - لتعليم القرآن الكريم</span>
+      <span class="white--text slogan">&nbsp; - {{slogan}}</span>
       <v-spacer />
     </v-app-bar>
 
@@ -63,7 +63,8 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'اكاديمية مكة',
+      title: 'أكاديمية مكة',
+      slogan: 'لتعليم القرآن الكريم'
     }
   },
 }
@@ -71,7 +72,7 @@ export default {
 
 <style lang="scss">
 #logo {
-  width: 2rem;
+  width: 3rem;
 }
 
 .app {
@@ -88,7 +89,6 @@ export default {
 }
 
 .v-parallax__image {
-  filter: blur(2px);
-  // background-size: cover;
+  filter: blur(6px);
 }
 </style>
