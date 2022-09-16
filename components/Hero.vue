@@ -21,16 +21,16 @@ export default {
     return {
       items: [
         {
-          src: 'https://quranlives.com/public/slider-images/MpR8Yr04au7tIxhGxc8S.jpg',
+          src: 'https://i.imgur.com/M38VE9v.jpg',
         },
         {
-          src: 'https://quranlives.com/public/slider-images/ZaPOlen8epOFvrATdgqW.jpg',
+          src: 'https://i.imgur.com/TyDO0jv.jpg',
         },
         {
-          src: 'https://quranlives.com/public/slider-images/kZtxrQ0yLs2bkxHAigyX.jpg',
+          src: 'https://i.imgur.com/Xmuw9b5.jpg',
         },
         {
-          src: 'https://quranlives.com/public/slider-images/x32Rm6TYyTmogaCdNeJB.jpg',
+          src: 'https://i.imgur.com/3i8z301.jpg',
         },
       ],
     }
