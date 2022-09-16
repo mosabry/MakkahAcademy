@@ -1,6 +1,6 @@
 <template>
   <v-app class="app">
-    <v-navigation-drawer class="teal darken-1" v-model="drawer" :mini-variant="miniVariant" :clipped="clipped" fixed app
+    <v-navigation-drawer class="navbar-drawer" v-model="drawer" :mini-variant="miniVariant" :clipped="clipped" fixed app
       dark temporary>
       <v-list>
         <v-list-item v-for="(item, i) in items" :key="i" :to="item.to" router exact>
@@ -14,10 +14,9 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar class="navbar teal darken-1" :clipped-left="clipped" fixed app dark>
+    <v-app-bar class="navbar" :clipped-left="clipped" fixed app dark>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
 
-      <!-- <img id="logo" src="~/static/makkah.png" alt="logo" /> -->
       &nbsp;
       <NuxtLink id="logo-text" to="/">
         <v-toolbar-title class="navbar-title" v-text="title" />
@@ -28,14 +27,14 @@
 
     <v-main>
       <!-- <v-container> -->
-        <Nuxt />
+      <Nuxt />
       <!-- </v-container> -->
     </v-main>
 
-    <v-footer :absolute="!fixed" app class="teal darken-1">
-      <a href="https://mosabry.com">mosabry</a>
-      <span class="year">&nbsp; &copy; {{ new Date().getFullYear() }}</span>
+    <v-footer :absolute="!fixed" app class="footer">
       <v-spacer></v-spacer>
+      <span class="year">&nbsp; {{ new Date().getFullYear() }} &copy; &nbsp;</span>
+      <a href="https://mosabry.com" target="_blank">mosabry</a>
     </v-footer>
   </v-app>
 </template>
@@ -59,12 +58,17 @@ export default {
           title: 'عنا',
           to: '/about',
         },
+        {
+          icon: 'mdi-search-web ',
+          title: 'تواصل معنا',
+          to: '/contact',
+        },
       ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'أكاديمية مكة',
-      slogan: 'لتعليم القرآن الكريم'
+      title: 'أكاديمية مكة المكرمة',
+      slogan: 'لعلوم القرآن الكريم'
     }
   },
 }
@@ -77,6 +81,12 @@ export default {
 
 .app {
   font-family: $main-font;
+}
+
+.navbar-drawer,
+.navbar,
+.footer {
+  background-color: $bg-main;
 }
 
 .navbar-title {

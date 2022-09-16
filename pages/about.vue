@@ -2,8 +2,11 @@
   <v-container class="teal--text darken-3">
     <v-row>
       <v-col>
-        <h1>أكاديمية مكة المكرمة</h1>
-        <h3>نختص بتعليم القرآن الكريم :</h3>
+        <v-row justify="center">
+          <Logo />
+        </v-row>
+
+        <h3>تعلم معنا القرآن الكريم :</h3>
         <ol class="mr-5">
           <li>برواية قالون وشعبة وحفص من طريق الشاطبية</li>
           <li>تعليم التجويد النظري والعملي</li>
@@ -40,14 +43,16 @@
 </template>
 
 <script>
+import Logo from '../components/Logo.vue';
 export default {
-  name: 'AboutPage',
+  name: "AboutPage",
   data() {
     return {
       overlay: false,
       zIndex: 1000,
-    }
+    };
   },
+  components: { Logo }
 }
 </script>
 

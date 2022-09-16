@@ -26,7 +26,7 @@ a {
   color: $link-color !important;
 
   &:hover{
-    text-decoration: underline;
+    color: $link-color-hover !important;
   }
 }
 
