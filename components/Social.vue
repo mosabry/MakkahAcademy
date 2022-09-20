@@ -17,9 +17,14 @@
           </a>
         </li>
         <li>
-          <a class="icon-link" href="https://whatsapp.com/" target="_blank">
+          <a class="icon-link" href="#">
             <fa class="icon whatsapp" :icon="['fab', 'whatsapp']" />
-            {{ socialIcons.whatsapp }}
+            {{socialIcons.whatsapp[1]}}
+          </a>
+        </li> <li>
+          <a class="icon-link" href="#">
+            <fa class="icon whatsapp" :icon="['fab', 'whatsapp']" />
+            {{socialIcons.whatsapp[2]}}
           </a>
         </li>
       </ul>
@@ -37,7 +42,7 @@ export default {
       socialIcons: {
         facebook: "Facebook",
         telegram: "Telegram",
-        whatsapp: "Whatsapp",
+        whatsapp: ["Whatsapp", "00201006026452", "00994409571238"]
       },
     };
   },
@@ -52,7 +57,7 @@ export default {
   .icon {
     font-size: 40px;
     vertical-align: middle;
-    line-height: 90px;
+    line-height: 10px;
   }
 
   &:hover {
