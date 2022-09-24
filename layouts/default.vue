@@ -19,9 +19,9 @@
 
       &nbsp;
       <NuxtLink id="logo-text" to="/">
-        <v-toolbar-title class="navbar-title" v-text="title" />
+        <v-toolbar-title class="navbar-title text-xs-subtitle-1" v-text="title" />
       </NuxtLink>
-      <span class="white--text slogan">&nbsp; - {{slogan}}</span>
+      <span class="white--text slogan mobile-hidden">&nbsp; - {{slogan}}</span>
       <v-spacer />
     </v-app-bar>
 
@@ -101,4 +101,10 @@ export default {
 // .v-parallax__image {
 //   filter: blur(6px);
 // }
+
+.mobile-hidden{
+  @media only screen and (max-width: 400px) {
+    display: none;
+  }
+}
 </style>

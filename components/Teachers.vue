@@ -2,19 +2,27 @@
     <section class="members">
         <h2 class='mb-5 py-3'>هيئة التدريس</h2>
         <v-row justify="center">
-            <v-col v-for="(Teacher, i) in Teachers" :key="i" xs="12" sm="8" md="3">
-                <v-card :color="Teacher.color" class="mx-auto my-12" mx-width="374" dark>
+            <v-col v-for="(teacher, i) in teachers" :key="i" xs="12" sm="10" md="5" lg="3">
+                <v-card :color="teacher.color" class="mx-auto my-12" mx-width="374" dark>
                     <template slot="progress">
                         <v-progress-linear color="deep-purple" height="10" indeterminate></v-progress-linear>
                     </template>
 
                     <v-avatar class="ma-3" size="125" tile>
-                        <v-img :src="Teacher.image"></v-img>
+                        <v-img :src="teacher.image"></v-img>
                     </v-avatar>
 
-                    <v-card-title class="text-h5" v-text="Teacher.name"></v-card-title>
+                    <v-card-title class="text-h5" v-text="teacher.name"></v-card-title>
 
-                    <v-crad-text>{{Teacher.about}}</v-crad-text>
+                    <v-crad-text>{{teacher.about}}</v-crad-text>
+
+                    <v-divider class="mx-4"></v-divider>
+
+                    <v-btn icon :href="teacher.yotube" target="_blank">
+                        <v-icon large style="color: #FF0000">
+                            mdi-youtube
+                        </v-icon>
+                    </v-btn>
 
                 </v-card>
             </v-col>
@@ -26,18 +34,20 @@
 export default {
     data() {
         return {
-            Teachers: [
+            teachers: [
                 {
-                    name: "الشيخ عماد",
+                    name: "الشيخ عماد أنور",
                     image: "https://t3leem.vercel.app/assets/img/owners/person-1.png",
                     about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula dui bibendum nunc cursus, in.",
                     color: '#1F7087',
+                    yotube: "https://www.youtube.com/channel/UCZ-TqjQwQfURaDWv0VcF3CA"
                 },
                 {
                     name: "الشيخ محمد فاروق",
                     image: "https://t3leem.vercel.app/assets/img/owners/person-2.png",
                     about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula dui bibendum nunc cursus, in.",
-                    color: "#00DC82",
+                    color: "#1F7087",
+                    yotube: "https://www.youtube.com/channel/UCC5pdvevmhjV9syAQt_NsuQ"
                 },
                 {
                     name: "الشيخ أحمد فودة",

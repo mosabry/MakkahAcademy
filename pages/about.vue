@@ -1,24 +1,29 @@
 <template>
-  <v-container class="teal--text darken-3">
+  <v-container>
     <v-row>
       <v-col>
         <v-row justify="center">
           <Logo />
         </v-row>
+        <h1>أكاديمية مكة المكرمة</h1>
 
-        <!-- <h3>تعلم معنا القرآن الكريم :</h3>
-        <ol class="mr-5">
-          <li>برواية قالون وشعبة وحفص من طريق الشاطبية</li>
-          <li>تعليم التجويد النظري والعملي</li>
-          <li>
-            ومكتبة للتلاولات القرآنية للروايات المتواتر سندها مثل قالون وشعبة
-            وحفص
-          </li>
-        </ol> -->
+        <main>
+          <h2>هيا بنا نتعلم كتاب الله على
+            أيدي معلمين معتمدين من الأزهر الشريف
+            ومؤهلين من الجمعية الخيرية لتحفيظ القرآن الكريم بالسعودية</h2>
+
+          <v-list>
+            <v-list-item class="text-md-h6">
+              نختص بعلوم القرآن الكريم والسنة النبوية
+            </v-list-item>
+            <v-list-item class="text-md-h6">شرح متون وقواعد التجويد</v-list-item>
+            <v-list-item class="text-md-h6">شرح متني الشاطبي والدرة</v-list-item>
+          </v-list>
+
+
+        </main>
       </v-col>
     </v-row>
-
-    <h1>تحت التطوير</h1>
   </v-container>
 </template>
 
