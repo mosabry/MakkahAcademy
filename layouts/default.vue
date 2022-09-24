@@ -98,7 +98,7 @@ export default {
   color: white;
 }
 
-.v-parallax__image {
-  filter: blur(6px);
-}
+// .v-parallax__image {
+//   filter: blur(6px);
+// }
 </style>

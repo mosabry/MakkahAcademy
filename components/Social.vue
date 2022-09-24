@@ -21,7 +21,8 @@
             <fa class="icon whatsapp" :icon="['fab', 'whatsapp']" />
             {{socialIcons.whatsapp[1]}}
           </a>
-        </li> <li>
+        </li>
+        <li>
           <a class="icon-link" href="#">
             <fa class="icon whatsapp" :icon="['fab', 'whatsapp']" />
             {{socialIcons.whatsapp[2]}}

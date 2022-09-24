@@ -2,16 +2,17 @@
   <div>
     <HeroVue :title="title" :verses="verses" />
 
+    <!-- <section class="green lighten-5 py-4">
+      <h1>بَلِّغُوا عَنِّي ولو آيَةً</h1>
+    </section> -->
+
     <main>
       <v-container class="text-center">
-        <section class="my-6">
-          <div class="goal-div my-6 py-3">
-            <h1>أكاديمية مكة المكرمة</h1>
-            <p class="goal text-xl-h4 text-lg-h6 text-md-body-1 text-sm-body-2">تعلم معنا القرآن الكريم
-              وتفسيره وقرآته
-              المتواترة على يد
-              مشايخ وعلماء متخصصين</p>
-          </div>
+        <div class="goal-div my-6 py-3">
+          <h1>أكاديمية مكة المكرمة لعلوم القرآن الكريم</h1>
+        </div>
+
+        <!-- <section class="my-6">
 
           <h2 class='mb-5 py-3 text-decoration-underline'>القراءات</h2>
           <v-row justify="center">
@@ -35,7 +36,10 @@
               </v-card>
             </v-col>
           </v-row>
-        </section>
+        </section> -->
+
+        <TeachersVue />
+
       </v-container>
     </main>
   </div>
@@ -43,10 +47,11 @@
 
 <script>
 import HeroVue from '@/components/Hero.vue'
+import TeachersVue from '../components/Teachers.vue';
 
 export default {
   name: 'IndexPage',
-  components: { HeroVue },
+  components: { HeroVue, TeachersVue },
   data() {
     return {
       title:
@@ -73,7 +78,7 @@ export default {
           src: 'https://qurancomplex.gov.sa/wp-content/uploads/2019/09/shuba01.jpg',
           name: 'شعبة عن عاصم',
         },
-      ]
+      ],
     }
   },
 }
