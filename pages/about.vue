@@ -14,10 +14,16 @@
 
           <v-list>
             <v-list-item class="text-md-h6">
-              نختص بعلوم القرآن الكريم والسنة النبوية
+              تعلم معنا علوم القرآن الكريم والسنة النبوية
             </v-list-item>
-            <v-list-item class="text-md-h6">شرح متون وقواعد التجويد</v-list-item>
-            <v-list-item class="text-md-h6">شرح متني الشاطبي والدرة</v-list-item>
+            <v-list-item class="text-md-h6">القراءات العشر الصغرى</v-list-item>
+            <v-list-item class="text-md-h6">القراءات العشر الكبرى</v-list-item>
+            <v-list-item class="text-md-h6">قواعد التجويد النظري والعملي</v-list-item>
+            <v-list-item class="text-md-h6">لدينا قسم خاص بالأعاجم
+              الناطقين بغير اللغة العربية
+              ويشمل
+              تصحيح التلاوة والنطق
+              تعليم التجويد للناطقين بغير العربية</v-list-item>
           </v-list>
 
 

@@ -9,10 +9,10 @@
                     </template>
 
                     <v-avatar class="ma-3" size="125" tile>
-                        <v-img :src="teacher.image"></v-img>
+                        <v-img class="rounded-circle" :src="teacher.image"></v-img>
                     </v-avatar>
 
-                    <v-card-title class="text-h5" v-text="teacher.name"></v-card-title>
+                    <v-card-title class="text-h5">الشيخ/ {{teacher.name}}</v-card-title>
 
                     <v-crad-text>{{teacher.about}}</v-crad-text>
 
@@ -36,30 +36,39 @@ export default {
         return {
             teachers: [
                 {
-                    name: "الشيخ عماد أنور",
+                    name: "عماد أنور",
                     image: "https://t3leem.vercel.app/assets/img/owners/person-1.png",
                     about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula dui bibendum nunc cursus, in.",
                     color: '#1F7087',
                     yotube: "https://www.youtube.com/channel/UCZ-TqjQwQfURaDWv0VcF3CA"
                 },
                 {
-                    name: "الشيخ محمد فاروق",
+                    name: "محمد فاروق",
                     image: "https://t3leem.vercel.app/assets/img/owners/person-2.png",
                     about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula dui bibendum nunc cursus, in.",
                     color: "#1F7087",
-                    yotube: "https://www.youtube.com/channel/UCC5pdvevmhjV9syAQt_NsuQ"
+                    yotube: "https://www.youtube.com/channel/UC9cGScMGbz89eq3u2v-rjGA"
                 },
                 {
-                    name: "الشيخ أحمد فودة",
+                    name: "أحمد فودة",
                     image: "https://t3leem.vercel.app/assets/img/owners/person-3.png",
                     about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula dui bibendum nunc cursus, in.",
                     color: "#00DC82",
+                    yotube: "https://www.youtube.com/channel/UCC5pdvevmhjV9syAQt_NsuQ"
                 },
                 {
-                    name: "الشيخ عمرو فايق",
+                    name: "حافظ رضوان",
+                    image: "https://i.imgur.com/HJXCAmn.png",
+                    about: "خريج معهد القراءات ومعلم القراءات بالأزهر الشريف والكبرى ومجاز بالقراءات العشرى الصغرى",
+                    color: "#00DC82",
+                    yotube: ""
+                },
+                {
+                    name: "عمرو فايق",
                     image: "https://t3leem.vercel.app/assets/img/owners/person-4.png",
                     about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula dui bibendum nunc cursus, in.",
                     color: "#00DC82",
+                    yotube: "https://www.youtube.com/channel/UCkRGInlEPYfI2c0K7aTorkg"
                 },
             ]
         }
