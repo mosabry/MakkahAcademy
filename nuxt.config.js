@@ -11,7 +11,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'أكاديمية مكة لعلوم القرآن الكريم - تعلم معنا القراءات العر الصغرى والكبري والتجويد النظري والعملي مع نخبة من الاساتذة المتخصصين' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
@@ -59,8 +59,19 @@ export default {
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
+    meta: {
+      title: 'Makkah Academy',
+      author: 'mosabry.com',
+      theme_color: '#2E7D32',
+    },
     manifest: {
+      name: 'Makkah Academy',
+      description: 'أكاديمية مكة لعلوم القرآن الكريم - تعلم معنا القراءات العر الصغرى والكبري والتجويد النظري والعملي مع نخبة من الاساتذة المتخصصين',
       lang: 'ar',
+    },
+    icon: {
+      fileName: 'icon.png',
+      sizes: [64, 120, 144, 152, 192, 384, 512],
     },
   },
 
