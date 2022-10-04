@@ -66,11 +66,12 @@ export default {
     },
     manifest: {
       name: 'Makkah Academy',
+      short_name: 'Makkah Academy',
       description: 'أكاديمية مكة لعلوم القرآن الكريم - تعلم معنا القراءات العر الصغرى والكبري والتجويد النظري والعملي مع نخبة من الاساتذة المتخصصين',
       lang: 'ar',
     },
     icon: {
-      fileName: 'icon.png',
+      fileName: 'maskable_icon.png',
       sizes: [64, 120, 144, 152, 192, 384, 512],
     },
   },
