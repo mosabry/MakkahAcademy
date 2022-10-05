@@ -65,20 +65,20 @@ blockquote {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #d4d2d2;
+  background: #fefefe;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #3b6978;
+  background: #2E7D32;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #63b7af;
+  background: #00DC82;
 }

@@ -2,8 +2,8 @@
     <section class="members">
         <h2 class='mb-5 py-3'>هيئة التدريس</h2>
         <v-row justify="center">
-            <v-col v-for="(teacher, i) in teachers" :key="i" xs="12" sm="10" md="5" lg="3">
-                <v-card :color="teacher.color" class="mx-auto my-12" mx-width="374" dark>
+            <v-col v-for="(teacher, i) in teachers" :key="i" cols="12" sm="8" md="5" lg="4" xl="3" align-self="center">
+                <v-card :color="teacher.color" class="mx-auto my-6" mx-width="374" dark>
                     <template slot="progress">
                         <v-progress-linear color="deep-purple" height="10" indeterminate></v-progress-linear>
                     </template>
@@ -17,8 +17,11 @@
                     <v-crad-text>{{teacher.about}}</v-crad-text>
 
                     <v-divider class="mx-4"></v-divider>
+                    <v-btn v-if="teacher.yotube === ''" icon>
+                        <v-icon></v-icon>
+                    </v-btn>
 
-                    <v-btn icon :href="teacher.yotube" target="_blank">
+                    <v-btn v-else icon :href="teacher.yotube" target="_blank">
                         <v-icon large style="color: #FF0000">
                             mdi-youtube
                         </v-icon>
