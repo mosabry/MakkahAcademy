@@ -1,15 +1,6 @@
 <template>
-  <!-- <v-parallax class="hero" dark height="800"
-    src="https://i.imgur.com/uq9ftWE.jpg">
-    <v-row align="center" justify="center">
-      <v-col class="text-center" cols="12">
-        <h1 class="text-h4 mb-4 hero--title">{{ title }}</h1>
-        <h4 class="subheading hero--verses">{{ verses }}</h4>
-      </v-col>
-    </v-row>
-  </v-parallax> -->
   <v-container>
-    <v-carousel class="rounded-lg" cycle height="400">
+    <v-carousel class="hero rounded-lg" hide-delimiter-background cycle height="500">
       <v-carousel-item v-for="(item,i) in items" :key="i" :src="item.src" aspect-ratio="16/9"></v-carousel-item>
     </v-carousel>
   </v-container>
@@ -36,13 +27,6 @@ export default {
 
 <style lang="scss" scoped>
 .hero {
-  &--title {
-    font-family: $main-font;
-  }
-
-  &--title,
-  &--verses {
-    text-shadow: 0 2px 9px #000;
-  }
+  border-color: #088837 #088837 #007827 !important;
 }
 </style>
